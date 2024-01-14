@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+:root {
+  font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body{
+  background-color: #dbdada;
+  margin: 0;
+
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+
+

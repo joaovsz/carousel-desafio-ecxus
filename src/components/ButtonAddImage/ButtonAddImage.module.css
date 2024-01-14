@@ -1,0 +1,15 @@
+.buttonAddImage{
+    min-width: 12rem;
+    max-width: 12rem;
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #cccc;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.imageInput{
+    display: none;
+}
