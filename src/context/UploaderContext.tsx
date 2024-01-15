@@ -1,7 +1,7 @@
 import { ChangeEvent, createContext, useRef, useState } from "react";
 import { AppContextType, ImageObject, initialValues } from "../types/UploaderContextTypes";
 
-export const ImagesContext = createContext<AppContextType>(initialValues);
+export const ImagesContext = createContext<Partial<AppContextType>>(initialValues);
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function UploaderProvider(props: any) {
   const [isDragging, setIsDragging] = useState(false);

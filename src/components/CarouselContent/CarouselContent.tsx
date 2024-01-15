@@ -17,7 +17,7 @@ const CarouselContent = () => {
                 behavior: 'smooth',
             });
         }
-        setErrorComponent(false);
+        setErrorComponent && setErrorComponent(false);
     }, [images]);
     function handleLeftClick(e: { preventDefault: () => void; }) {
         e.preventDefault();
@@ -36,7 +36,7 @@ const CarouselContent = () => {
                 <div className={styles.carouselContent}>
                     {isDragging && <IsDraggingOverlay inCarousel={true} />}
                     <ButtonAddImage />
-                    {images.map((image, index) =>
+                    {images&&images.map((image, index) =>
                         <CardImage image={image} key={index} item={index} />
                     )}
                 </div>

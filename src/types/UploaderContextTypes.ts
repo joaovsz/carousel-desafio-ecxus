@@ -1,7 +1,7 @@
 import React, { ChangeEvent } from "react";
 
 export const initialValues = {
-  images: [],
+  images: [] as ImageObject[],
   isDragging: false,
   errorComponent: false,
   fileInputRef: null,
@@ -15,9 +15,9 @@ export const initialValues = {
   onDrop: () => {},
 };
 export interface AppContextType {
-  images: ImageObject[];
-  errorComponent: boolean;
-  fileInputRef: React.RefObject<HTMLInputElement> | null;
+  images?: ImageObject[];
+  errorComponent?: boolean;
+  fileInputRef?: React.RefObject<HTMLInputElement> | null;
   isDragging: boolean;
   setImages: React.Dispatch<React.SetStateAction<ImageObject[]>>;
   onFileselect: (event: ChangeEvent<HTMLInputElement>) => void;

@@ -51,7 +51,7 @@ const CarouselUploader = () => {
         <span className={styles.uploaderTitle}>Carousel Uploader</span>
         {renderErrorComponent()}
       </div>
-      {images.length > 0 ? (
+      {images&&images.length > 0 ? (
         <CarouselContent />
       ) : (
         <div
