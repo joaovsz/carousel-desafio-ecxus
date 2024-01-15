@@ -2,7 +2,7 @@ import { Meta } from "@storybook/react";
 import { UploaderProvider } from "../../context/UploaderContext";
 import ButtonAddImage from "./ButtonAddImage";
 
-export default {
+const meta: Meta = {
     title: 'Components/ButtonAddImage',
     component: ButtonAddImage,
     parameters: {
@@ -13,7 +13,15 @@ export default {
             },
         },
     },
-} as Meta;
+
+    argTypes: {
+        onClick: {
+            description: 'Ao clicar no botão ele abre a pasta do computador para inserção de imagens',
+        }
+    },
+    tags: ["autodocs"],
+};
+export default meta;
 
 export const Default = () => (
     <UploaderProvider>

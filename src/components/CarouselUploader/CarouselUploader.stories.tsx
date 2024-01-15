@@ -1,11 +1,22 @@
-// CarouselUploader.stories.js
-
 import { ImagesContext, UploaderProvider } from '../../context/UploaderContext';
 import CarouselUploader from './CarouselUploader ';
 
 export default {
     title: 'CarouselUploader',
     component: CarouselUploader,
+    parameters: {
+        layout: "centered",
+    },
+    argTypes: {
+        onDrop: {
+            description: 'Ao soltar uma imagem ele adiciona a imagem ao final do carousel, e se a soma do tamanho das imagens ultrapassar o limite do carousel, o carousel faz um scroll automático para a direita',
+            default: false
+        },
+        onClick: {
+            description: 'Ao clicar no botão de upload ele abre a pasta do computador para inserção de imagens'
+        }
+    },
+    tags: ["autodocs"],
 };
 
 export const Default = () => (
@@ -38,13 +49,17 @@ export const WithImages = () => (
                 }], isDragging: false
             }}
     >
-        <CarouselUploader />
+        <div >
+            <CarouselUploader />
+        </div>
     </ImagesContext.Provider>
 );
 
 export const IsDragging = () => (
     <ImagesContext.Provider value={{ images: [], isDragging: true }}>
-        <CarouselUploader />
+        
+            <CarouselUploader />
+        
     </ImagesContext.Provider>
 );
 

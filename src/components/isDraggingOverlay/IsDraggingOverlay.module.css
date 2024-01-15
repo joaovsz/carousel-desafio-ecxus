@@ -1,12 +1,14 @@
 .isDragging {
   z-index: 2;
-  width: 25rem;
+  margin: auto;
+  max-width: 17rem;
   max-height: 12rem;
   display: flex;
   color: red;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   position: relative;
   filter: brightness(100%);
 }
