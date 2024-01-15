@@ -44,7 +44,7 @@ export const Example = () => {
                 <IoMdCloseCircle
                     size={28}
                     className={styles.closeButton}
-                    onClick={() => removeImage(0)}
+                    onClick={() => removeImage&&removeImage(0)}
                 />
             )}
             <img src={image.url} alt={image.name} className={styles.image} />
