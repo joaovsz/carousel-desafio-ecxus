@@ -64,5 +64,5 @@
   flex-direction: column;
 }
 .isDragging {
-  opacity: 20%;
+  filter: brightness(20%);
 }

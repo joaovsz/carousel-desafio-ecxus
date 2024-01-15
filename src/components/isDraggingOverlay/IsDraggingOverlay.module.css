@@ -1,14 +1,13 @@
 .isDragging {
   z-index: 2;
   width: 25rem;
-  /* height: 100%; */
   max-height: 12rem;
   display: flex;
+  color: red;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: absolute;
-  left: 33%;
+  left: 50%;
   filter: brightness(100%);
 }
-

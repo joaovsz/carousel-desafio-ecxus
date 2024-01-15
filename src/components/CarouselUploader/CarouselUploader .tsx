@@ -29,6 +29,7 @@ const CarouselUploader = () => {
           ref={fileInputRef}
           type="file"
           name="image"
+          multiple
           className={styles.imageInput}
           onChange={onFileselect}
         />
