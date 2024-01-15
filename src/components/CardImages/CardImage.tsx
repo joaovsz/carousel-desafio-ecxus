@@ -18,7 +18,7 @@ const CardImage = (props: { image: ImageObject, item: number }) => {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}>
             {isHovered && (
-                <IoMdCloseCircle size={28} className={styles.closeButton} onClick={() => removeImage(props.item)} />
+                <IoMdCloseCircle size={28} className={styles.closeButton} onClick={() => removeImage&&removeImage(props.item)} />
             )}
             <img src={props.image.url} alt={props.image.name} className={styles.image} />
         </div>
